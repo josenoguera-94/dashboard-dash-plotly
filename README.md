@@ -1,12 +1,14 @@
 # Dashboard
 
+
+
 Este es mi primer proyecto de Dashboard en Python hecho con Dash que utiliza librerías como:
 
-Plotly.
-Bootstrap para dash.
-Pandas.
-Numpy.
-Scikit-learn.
+- Plotly.
+- Bootstrap para dash.
+- Pandas.
+- Numpy.
+- Scikit-learn.
 
 El cual puedes encontrar un pequeña guía de como estructurar un Dashboard, combinando diferentes formas construir y darle estilo a los distintos elementos. Espero que les sirva de ayuda a los que también están empezando.
 
@@ -21,4 +23,12 @@ Página de dash-plotly: https://dash.plotly.com/
 Disfrutenlo!
 
 
-dashboard-dash-plotly
+**Creado por:** Jose Noguera
+
+
+## Imágenes del dashboard
+
+![parte1](img/parte_1.jpg)
+![parte2](img/parte_2.jpg)
+![parte3](img/parte_3.jpg)
+![parte4](img/parte_4.jpg)
