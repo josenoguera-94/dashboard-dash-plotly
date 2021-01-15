@@ -10,11 +10,14 @@ import plotly.express as px
 import pandas as pd
 import numpy as np
 from sklearn import linear_model
+import os
 
 
-#ABRIENDO ARCHIVO CON PANDAS (CAMBIAR LA RUTA DEL ARCHIVO)
-ruta = 'git/dash/proyecto-dashboard/misc/cars.csv'
-df = pd.read_csv(ruta)
+#AÑADIENDO RUTA Y ABRIENDO ARCHIVO CON PANDAS 
+path = os.path.dirname(os.path.abspath(__file__))
+path = os.path.join(path, "misc", "cars.csv")
+
+df = pd.read_csv(path)
 
 
 # CONSTRUYENDO TABLA DE DATOS
@@ -191,9 +194,7 @@ def radio_items_barras():
 
                   ])
 
-    
     return radio_items
-
 
 # CONTRUYENDO GRAFICO DE BARRAS CON CALLBACKS
 def grafico_barras():
@@ -428,6 +429,7 @@ def regresion_multiple():
     
     return regresion_multiple
 
+# CONSTRUYENDO ESTIMACIONES
 def estimaciones():
 
     entrada = html.Div([
@@ -515,12 +517,6 @@ body = html.Div([
                         ]),
                         dbc.Col([
                             analisis_descriptivo()
-                        ])
-                    ]),
-                    html.Br(),
-                    dbc.Row([
-                        dbc.Col([
-                             
                         ])
                     ]),
                     html.Br(),
